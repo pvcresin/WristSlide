@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pvcresin.wristroke.MainActivity">
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="100"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="LEFT/RIGHT"
+        android:id="@+id/button"
+        android:textSize="10sp"
+        android:elevation="0dp"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="start"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:id="@+id/start"
+        android:textSize="10sp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="192.168.1.239"
+        android:ems="10"
+        android:id="@+id/ip"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="6: 1.239\n5x: 1.161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView" />
+
+</RelativeLayout>
